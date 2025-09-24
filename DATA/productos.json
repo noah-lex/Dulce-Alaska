@@ -1,0 +1,14 @@
+[
+    {
+      "id": 1,
+      "nombre": "Torta Selva Negra",
+      "precio": 42000,
+      "imagen": "../IMG/selva.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Torta Rogel",
+      "precio": 36000,
+      "imagen": "../IMG/rogel.jpg"
+    }
+  ]
