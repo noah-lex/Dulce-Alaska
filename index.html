@@ -1,40 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dulce Alaska | Endulzate el alma</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dulce Alaska - Simulador</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
-    <h1>Dulce Alaska</h1>
-    <p>Endulzate el alma con nuestras tortas</p>
+  <header class="site-header">
+    <h1>Dulce Alaska - Simulador de Tienda</h1>
+    <p class="subtitle">Entrega 2 - Simulador JS interactuando con HTML y LocalStorage</p>
   </header>
 
-  <section class="formulario">
-    <h2>Registrate para realizar tu pedido</h2>
-    <form id="registroForm">
-      <input type="text" id="nombre" placeholder="Nombre" required />
-      <input type="email" id="mail" placeholder="Email" required />
-      <input type="tel" id="telefono" placeholder="Teléfono" required />
-      <input type="password" id="contraseña" placeholder="Contraseña" required />
-      <input type="password" id="confirmarContraseña" placeholder="Confirmar contraseña" required />
-      <button type="submit">Registrarse</button>
-    </form>
-  </section>
+  <main class="container">
+    <section id="products-section">
+      <h2>Productos</h2>
+      <div id="products" class="grid"></div>
+    </section>
 
-  <main>
-    <h2>Catálogo de tortas</h2>
-    <div id="catalogo" class="catalogo"></div>
+    <aside id="cart-section">
+      <h2>Carrito</h2>
+      <div id="cart" class="cart"></div>
+      <div class="cart-summary">
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button id="clear-cart" class="btn">Vaciar carrito</button>
+      </div>
+
+      <form id="checkout-form" class="checkout-form" novalidate>
+        <h3>Finalizar compra</h3>
+        <label>Nombre
+          <input type="text" id="customer-name" required minlength="2" />
+        </label>
+        <label>Correo
+          <input type="email" id="customer-email" required />
+        </label>
+        <button id="checkout" class="btn" type="submit">Simular pago</button>
+        <p id="checkout-msg" class="msg"></p>
+      </form>
+    </aside>
   </main>
 
-  <section>
-    <h2>Carrito</h2>
-    <div id="carrito"></div>
-  </section>
+  <footer class="site-footer">
+    <small>Proyecto de ejemplo - Entregable2 + Apellido</small>
+  </footer>
 
-  <script src="./LIBS/sweetalert2.all.min.js"></script>
-  <script src="./JS/app.js"></script>
+  <script src="js/app.js" type="module"></script>
 </body>
 </html>
