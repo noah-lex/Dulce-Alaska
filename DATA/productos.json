@@ -1,14 +1,30 @@
 [
-    {
-      "id": 1,
-      "nombre": "Torta Selva Negra",
-      "precio": 42000,
-      "imagen": "../IMG/selva.jpg"
-    },
-    {
-      "id": 2,
-      "nombre": "Torta Rogel",
-      "precio": 36000,
-      "imagen": "../IMG/rogel.jpg"
-    }
-  ]
+  {
+    "id": 1,
+    "name": "Torta Chocolate",
+    "price": 1200,
+    "stock": 10,
+    "desc": "Porción grande de torta clásica de chocolate."
+  },
+  {
+    "id": 2,
+    "name": "Torta Vainilla",
+    "price": 1100,
+    "stock": 8,
+    "desc": "Torta de vainilla con crema pastelera."
+  },
+  {
+    "id": 3,
+    "name": "Cheesecake Frutos Rojos",
+    "price": 1500,
+    "stock": 5,
+    "desc": "Cheesecake con coulis de frutos rojos."
+  },
+  {
+    "id": 4,
+    "name": "Brownie Pack",
+    "price": 700,
+    "stock": 20,
+    "desc": "Pack de 6 brownies caseros."
+  }
+]
